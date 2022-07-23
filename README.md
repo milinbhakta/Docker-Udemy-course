@@ -22,3 +22,8 @@
 ## Section 5: Docker Networking
 - Docker networking
 - docker network create my-network
+
+## Section 6: Docker Multi-Container applications
+- Combining multiple Docker containers into a single application
+- Working with multiple Docker containers
+- database (MongoDB) -> backend (NodeJs REST API) -> frontend (React SPA)
