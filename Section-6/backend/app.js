@@ -36,7 +36,7 @@ app.get('/goals', async (req, res) => {
         text: goal.text,
       })),
     });
-    console.log('FETCHED GOALS');
+    console.log('FETCHED GOALS!!');
   } catch (err) {
     console.error('ERROR FETCHING GOALS');
     console.error(err.message);
@@ -84,7 +84,7 @@ app.delete('/goals/:id', async (req, res) => {
 });
 
 mongoose.connect(
-  'mongodb://localhost:27017/course-goals',
+  `mongodb://${process.env.MONGODB_USER}:${process.env.MONGODB_PASS}@mongodb:27017/course-goals?authSource=admin`,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
