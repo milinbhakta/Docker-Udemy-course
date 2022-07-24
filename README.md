@@ -27,3 +27,10 @@
 - Combining multiple Docker containers into a single application
 - Working with multiple Docker containers
 - database (MongoDB) -> backend (NodeJs REST API) -> frontend (React SPA)
+
+## Section 7: Docker Compose: Elegant Multi-Container Orchestration
+- Create a configuration file for your multi-container application
+- Create a Docker Compose file
+- Run your multi-container application with Docker Compose
+- docker-compose up
+- docker-compose down
